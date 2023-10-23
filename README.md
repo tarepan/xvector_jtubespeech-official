@@ -3,6 +3,12 @@ This repository provides a pre-trained model for extracting the [x-vector](https
 
 このリポジトリは，[x-vector](https://www.danielpovey.com/files/2018_icassp_xvectors.pdf) (話者表現ベクトル) を抽出するための学習済みモデルを提供します．このモデルは，[JTubeSpeechコーパス](https://github.com/sarulab-speech/jtubespeech)と呼ばれる，YouTubeから収集した日本語音声から学習されています．
 
+## Quick Usage
+```python
+embedder = torch.hub.load("tarepan/xvector_jtubespeech-official", "xvector", trust_repo=True)
+xvector = embedder.vectorize(mfcc)
+```
+
 ## Training configures / 学習時の設定
 - The number of speakers: 1,233
 - Sampling frequency: 16,000Hz
