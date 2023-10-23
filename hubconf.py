@@ -8,7 +8,7 @@ from xvector_jtubespeech.network.xvector import _XVector # pylint: disable=wrong
 
 
 URLS = {
-    "xvector_jtubespeech": "https://github.com/sarulab-speech/xvector_jtubespeech/blob/master/xvector.pth",
+    "xvector_jtubespeech": "https://raw.githubusercontent.com/sarulab-speech/xvector_jtubespeech/master/xvector.pth",
 }
 
 
